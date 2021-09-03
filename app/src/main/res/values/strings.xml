@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">First Project</string>
+    <string name="clubs_name">Club Name</string>
+    <string name="detail">Detail</string>
+    <string name="view_list_club">View List Club</string>
+    <string name="view_card_club">View Card Club</string>
+    <string name="about_developer">About Developer</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="about_name"><Name>Achmad Farid Alfa Waid</Name></string>
+    <string name="about_email"><email>faridwaid01@gmail.com</email></string>
+    <string name="about_dev">Hellooo</string>
+</resources>
