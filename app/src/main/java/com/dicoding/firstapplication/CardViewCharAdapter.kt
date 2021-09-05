@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class CardViewClubAdapter(private val listClub: ArrayList<Club>): RecyclerView.Adapter<CardViewClubAdapter.CardViewViewHolder>() {
+class CardViewCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.Adapter<CardViewCharAdapter.CardViewViewHolder>() {
 
     inner class CardViewViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
@@ -22,28 +22,28 @@ class CardViewClubAdapter(private val listClub: ArrayList<Club>): RecyclerView.A
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_cardview_club, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_cardview_char, parent, false)
         return CardViewViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: CardViewViewHolder, position: Int) {
-        val club = listClub[position]
+        val charAnime = listChar[position]
 
         Glide.with(holder.itemView.context)
-            .load(club.photo)
+            .load(charAnime.photo)
             .apply(RequestOptions().override(160,200))
             .into(holder.imgPhoto)
 
-        holder.tvName.text = club.name
-        holder.tvDetail.text = club.detail
+        holder.tvName.text = charAnime.name
+        holder.tvDetail.text = charAnime.detail
 
-        holder.btnFavorite.setOnClickListener { Toast.makeText(holder.itemView.context, "Your favorite is " + listClub[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
-        holder.btnShare.setOnClickListener { Toast.makeText(holder.itemView.context, "You have shared " + listClub[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
-        holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, "You selected " + listClub[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
+        holder.btnFavorite.setOnClickListener { Toast.makeText(holder.itemView.context, "Your favorite is " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
+        holder.btnShare.setOnClickListener { Toast.makeText(holder.itemView.context, "You have shared " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
+        holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, "You selected " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
 
     }
 
     override fun getItemCount(): Int {
-        return listClub.size
+        return listChar.size
     }
 }

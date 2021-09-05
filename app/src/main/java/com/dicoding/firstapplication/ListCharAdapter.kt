@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class ListClubAdapter(private val listClub: ArrayList<Club>): RecyclerView.Adapter<ListClubAdapter.ListViewHolder>() {
+class ListCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.Adapter<ListCharAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
@@ -17,23 +17,23 @@ class ListClubAdapter(private val listClub: ArrayList<Club>): RecyclerView.Adapt
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_club, viewGroup, false)
+        val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_char, viewGroup, false)
         return ListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val club = listClub[position]
+        val charAnime = listChar[position]
 
         Glide.with(holder.itemView.context)
-            .load(club.photo)
+            .load(charAnime.photo)
             .apply(RequestOptions().override(120,120))
             .into(holder.imgPhoto)
 
-        holder.tvName.text = club.name
-        holder.tvDetail.text = club.detail
+        holder.tvName.text = charAnime.name
+        holder.tvDetail.text = charAnime.detail
     }
 
     override fun getItemCount(): Int {
-        return listClub.size
+        return listChar.size
     }
 }

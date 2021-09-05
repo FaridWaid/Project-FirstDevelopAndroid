@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_clubs"
+        android:id="@+id/rv_chars"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_row_club" />
+        tools:listitem="@layout/item_row_char" />
 
 </RelativeLayout>

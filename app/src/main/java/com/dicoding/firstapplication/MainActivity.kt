@@ -10,19 +10,19 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rvClubs: RecyclerView
-    private var list: ArrayList<Club> = arrayListOf()
-    private var title: String = "The Best Clubs In The World"
+    private lateinit var rvChars: RecyclerView
+    private var list: ArrayList<Character> = arrayListOf()
+    private var title: String = "Top Character In Anime World"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setActionBarTitle(title)
 
-        rvClubs = findViewById(R.id.rv_clubs)
-        rvClubs.setHasFixedSize(true)
+        rvChars = findViewById(R.id.rv_chars)
+        rvChars.setHasFixedSize(true)
 
-        list.addAll(ClubsData.listData)
+        list.addAll(CharactersData.listData)
         showRecyclesList()
     }
 
@@ -31,21 +31,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclesList() {
-        rvClubs.layoutManager = LinearLayoutManager(this)
-        val listClubAdapter = ListClubAdapter(list)
-        rvClubs.adapter = listClubAdapter
+        rvChars.layoutManager = LinearLayoutManager(this)
+        val listClubAdapter = ListCharAdapter(list)
+        rvChars.adapter = listClubAdapter
     }
 
     private fun showRecyclerCardView() {
-        rvClubs.layoutManager = LinearLayoutManager(this)
-        val cardViewClubAdapter = CardViewClubAdapter(list)
-        rvClubs.adapter = cardViewClubAdapter
+        rvChars.layoutManager = LinearLayoutManager(this)
+        val cardViewClubAdapter = CardViewCharAdapter(list)
+        rvChars.adapter = cardViewClubAdapter
     }
 
     private fun showAboutDeveloper() {
-        rvClubs.layoutManager = LinearLayoutManager(this)
+        rvChars.layoutManager = LinearLayoutManager(this)
         val listAboutAdapter = ListAboutAdapter()
-        rvClubs.adapter = listAboutAdapter
+        //rvChars.adapter = listAboutAdapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -61,11 +61,11 @@ class MainActivity : AppCompatActivity() {
     private fun setMode(selecterMode: Int) {
         when (selecterMode) {
             R.id.action_list -> {
-                title = "The Best Clubs In The World"
+                title = "Top Character In Anime World"
                 showRecyclesList()
             }
             R.id.action_card -> {
-                title = "You can choose one of this clubs"
+                title = "Choose One of This Characters"
                 showRecyclerCardView()
             }
             R.id.action_about -> {

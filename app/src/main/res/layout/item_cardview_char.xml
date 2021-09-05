@@ -37,7 +37,7 @@
             android:layout_toRightOf="@id/img_item_photo"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="@string/clubs_name" />
+            tools:text="@string/chars_name" />
 
         <TextView
             android:id="@+id/tv_item_detail"
