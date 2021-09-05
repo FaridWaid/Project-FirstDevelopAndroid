@@ -48,31 +48,31 @@ class MainActivity : AppCompatActivity() {
         //rvChars.adapter = listAboutAdapter
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        menuInflater.inflate(R.menu.menu, menu)
+//        return super.onCreateOptionsMenu(menu)
+//    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        setMode(item.itemId)
-        return super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        setMode(item.itemId)
+//        return super.onOptionsItemSelected(item)
+//    }
 
-    private fun setMode(selecterMode: Int) {
-        when (selecterMode) {
-            R.id.action_list -> {
-                title = "Top Character In Anime World"
-                showRecyclesList()
-            }
-            R.id.action_card -> {
-                title = "Choose One of This Characters"
-                showRecyclerCardView()
-            }
-            R.id.action_about -> {
-                title = "About Developer"
-                showAboutDeveloper()
-            }
-        }
-        setActionBarTitle(title)
-    }
+//    private fun setMode(selecterMode: Int) {
+//        when (selecterMode) {
+//            R.id.action_list -> {
+//                title = "Top Character In Anime World"
+//                showRecyclesList()
+//            }
+//            R.id.action_card -> {
+//                title = "Choose One of This Characters"
+//                showRecyclerCardView()
+//            }
+//            R.id.action_about -> {
+//                title = "About Developer"
+//                showAboutDeveloper()
+//            }
+//        }
+//        setActionBarTitle(title)
+//    }
 }
