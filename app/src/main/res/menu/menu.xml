@@ -3,18 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_list"
-        android:title="@string/view_list_char"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_card"
-        android:title="@string/view_card_char"
-        app:showAsAction="never" />
-
-    <item
         android:id="@+id/action_about"
         android:title="@string/about_developer"
-        app:showAsAction="never" />
+        android:icon="@drawable/ic_baseline_person_24"
+        app:showAsAction="ifRoom|withText" />
 
 </menu>

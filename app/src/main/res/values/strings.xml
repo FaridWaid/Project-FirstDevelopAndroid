@@ -7,7 +7,11 @@
     <string name="about_developer">About Developer</string>
     <string name="favorite">Favorite</string>
     <string name="share">Share</string>
-    <string name="about_name"><Name>Achmad Farid Alfa Waid</Name></string>
-    <string name="about_email"><email>faridwaid01@gmail.com</email></string>
+    <string name="about_name"><Name>Name</Name></string>
+    <string name="farid"><Name>: Achmad Farid Alfa Waid</Name></string>
+    <string name="about_email"><email>Email</email></string>
+    <string name="email"><email>: Faridwaid01@gmail.com</email></string>
+    <string name="about_status"><email>Status</email></string>
+    <string name="status"><email>: College Student</email></string>
     <string name="about_dev">Hellooo</string>
 </resources>

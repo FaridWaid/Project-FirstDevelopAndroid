@@ -1,5 +1,6 @@
 package com.dicoding.firstapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -47,18 +48,18 @@ class HomeActivity : AppCompatActivity() {
 //        //rvChars.adapter = listAboutAdapter
 //    }
 //
-//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-//        menuInflater.inflate(R.menu.menu, menu)
-//        return super.onCreateOptionsMenu(menu)
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        setMode(item.itemId)
-//        return super.onOptionsItemSelected(item)
-//    }
-//
-//    private fun setMode(selecterMode: Int) {
-//        when (selecterMode) {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selecterMode: Int) {
+        when (selecterMode) {
 //            R.id.action_list -> {
 //                title = "Top Character In Anime World"
 //                showRecyclesList()
@@ -67,11 +68,12 @@ class HomeActivity : AppCompatActivity() {
 //                title = "Choose One of This Characters"
 //                showRecyclerCardView()
 //            }
-//            R.id.action_about -> {
+            R.id.action_about -> {
 //                title = "About Developer"
-//                showAboutDeveloper()
-//            }
-//        }
-//        setActionBarTitle(title)
-//    }
+                val moveIntent = Intent(this@HomeActivity, AboutDevActivity::class.java)
+                startActivity(moveIntent)
+            }
+        }
+        setActionBarTitle(title)
+    }
 }
