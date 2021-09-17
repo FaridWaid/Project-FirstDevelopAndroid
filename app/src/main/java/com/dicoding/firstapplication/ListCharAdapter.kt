@@ -1,5 +1,6 @@
 package com.dicoding.firstapplication
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,6 +32,16 @@ class ListCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.
 
         holder.tvName.text = charAnime.name
         holder.tvDetail.text = charAnime.detail
+
+        val mContext = holder.itemView.context
+
+        holder.itemView.setOnClickListener{
+            val moveDetail = Intent(mContext, DetailChar::class.java)
+            moveDetail.putExtra(DetailChar.EXTRA_NAME, charAnime.name)
+            moveDetail.putExtra(DetailChar.EXTRA_DETAIL, charAnime.detail)
+            moveDetail.putExtra(DetailChar.EXTRA_PHOTO, charAnime.photo)
+            mContext.startActivity(moveDetail)
+        }
     }
 
     override fun getItemCount(): Int {

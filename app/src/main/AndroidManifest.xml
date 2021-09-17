@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApplication">
         <activity
-            android:name=".AboutDevActivity"
-            android:parentActivityName=".HomeActivity"
+            android:name=".DetailChar"
             android:exported="true" />
+        <activity
+            android:name=".AboutDevActivity"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".HomeActivity"
             android:exported="true" />

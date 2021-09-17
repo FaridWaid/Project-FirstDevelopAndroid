@@ -13,7 +13,8 @@ object CharactersData {
         "Edward Elric",
         "Uzumaki Naruto")
 
-    private val lelouch: String = "Age: 17 (first season), 18 (second season)\n" +
+    private val lelouch: String = "Anime: Code Geass\n" +
+            "Age: 17 (first season), 18 (second season)\n" +
             "Date of Birth: December 5, 1999 a.t.b. (Sagittarius)\n" +
             "Blood Type: A\n" +
             "Nationality: Britannian\n" +
@@ -34,14 +35,16 @@ object CharactersData {
             "\n" +
             "Despite his cold, calculating demeanor and ruthlessness in battle, he can be a rather compassionate person to his friends and loved ones. To Nunnally, he is a loving older brother, and to Suzaku, a loyal friend, although the two are enemies. Lelouch, at first glance, seems to have relatively little concern for the well-being of his subordinates, but in reality, he does care about them, seeing them as valuable allies."
 
-    private val levi: String = "Birthday: December 25\n" +
+    private val levi: String = "Anime: Attack On Titan\n" +
+            "Birthday: December 25\n" +
             "Height: 160 cm (5'3\")\n" +
             "Weight: 65 kg (143 lbs)\n" +
             "Affiliations: Scouting Legion, Special Operations Squad\n" +
             "\n" +
             "Levi is known as humanity's most powerful soldier. He's ranked as Captain of the Scouting Legion division. Levi is also the leader of the Special Operations Squad, an elite team that he hand-picked in order to protect Eren Yeager. While it is said that he is blunt and unapproachable, it is noted that he has a strong respect for structure and discipline. There are rumors that he was originally part of underground crime before he became a soldier. Although he often appears to be unfriendly, he cares deeply for his team and has never undervalued human life. He is also a notorious clean-freak."
 
-    private val l: String = "Birthday: October 31, 1979 (1982 in anime)\n" +
+    private val l: String = "Anime: Death Note\n" +
+            "Birthday: October 31, 1979 (1982 in anime)\n" +
             "Zodiac sign: Scorpio\n" +
             "Height: 179 cm (5'10\")\n" +
             "Weight: 50 kg (110 lbs.)\n" +
@@ -54,7 +57,8 @@ object CharactersData {
             "\n" +
             "L suggests that even though he eats only sweet foods, he remains underweight because the brain uses the most calories of any organ in the body. He also says that if he sits normally, his reasoning ability would drop 40%."
 
-    private val luffy: String = "Name: Monkey D. Luffy\n" +
+    private val luffy: String = "Anime: One Piece\n" +
+            "Name: Monkey D. Luffy\n" +
             "Age: 17; 19\n" +
             "Birthdate: May 5, Taurus\n" +
             "Height: 172 cm; 174 cm\n" +
@@ -75,7 +79,8 @@ object CharactersData {
             "\n" +
             "Luffy's dream is to find the One Piece and become Pirate King. He knows that to achieve his goal, he will have to defeat many strong opponents, including the World Government and his childhood hero Shanks.\n"
 
-    private val okabe: String = "Age: 18 (Steins;Gate), 19 (Steins;Gate 0)\n" +
+    private val okabe: String = "Anime: Steins Gate\n" +
+            "Age: 18 (Steins;Gate), 19 (Steins;Gate 0)\n" +
             "Birthdate: December 14, 1991 (Sagittarius)\n" +
             "Blood Type: A\n" +
             "Height: 177 cm (5'10\")\n" +
@@ -91,7 +96,8 @@ object CharactersData {
             "\n" +
             "Okabe likes to pose as an agent working against a specific \"Organization,\" which he suggests is always after him, as he believes this kind of image gives him an excellent and mysterious aura. However, this seems to disappear as the story progresses, with SERN likely replacing the \"Organization's\" villainous image. He usually gives off the impression of being delusional and paranoid, displaying eccentric mannerisms such as talking to himself on the phone and engaging in fits of maniacal laughter.\n"
 
-    private val light: String = "Birthdate: February 28, 1986 (1989 in the anime)\n" +
+    private val light: String = "Anime: Death Note\n" +
+            "Birthdate: February 28, 1986 (1989 in the anime)\n" +
             "Zodiac sign: Pisces\n" +
             "Hair color: Brown\n" +
             "Eye color: Brown\n" +
@@ -109,7 +115,8 @@ object CharactersData {
             "\n" +
             "Yagami Light is a brilliant college student. Nicknamed \"Kira,\" he uses the Death Note to create his ideal world of justice under him; its new God. Though he looks frail, Light is an extremely athletic person, with an aptitude to find an opponent's weak point. He is a genius, which adds to his notion that only he is fit to judge humanity and steer it on a proper moral course."
 
-    private val zoro: String = "Name: Roronoa Zoro\n" +
+    private val zoro: String = "Anime: One Piece\n" +
+            "Name: Roronoa Zoro\n" +
             "Age: 19; 21\n" +
             "Birthdate: November 11, Scorpio\n" +
             "Height: 178 cm (5'10\") , 181 (5'11\") (after timeskip)\n" +
@@ -126,7 +133,8 @@ object CharactersData {
             "\n" +
             "Zoro often also reminds others of the harsh facts, which often shocks some of the other crew members, although they usually decide he is right. Zoro has also stated that he is an atheist, and has never believed in anything except himself. He often comes across as arrogant and overconfident, but only because he knows he's a strong man with great fighting ability. Even so, Zoro knows that he still has a lot of untapped potential, and is constantly seen training and trying to improve his fighting skills. He also adheres to a strict sword master's code of honor, and never falsely brags or lies about his abilities, sometimes outright admitting a weakness, even to an enemy. He also never tries to escape from a fight or use trickery to win, believing that doing so is cowardly and scorning anyone who uses such tactics. Zoro is very vigorous, strong-willed, and determined."
 
-    private val killua: String = "Age: 12 (beginning); 14-15 (current)\n" +
+    private val killua: String = "Anime: Hunter X Hunter\n" +
+            "Age: 12 (beginning); 14-15 (current)\n" +
             "Birthday: June 15 (1999), July 7 (2011)\n" +
             "Height: 158 cm\n" +
             "Weight: 45 kg\n" +
@@ -149,7 +157,8 @@ object CharactersData {
             "\n" +
             "He is also the third person to have a transmutation Nen as his father and grandfather are also transmuters. Coincidentally, all three family members have silver hair."
 
-    private val elric: String = "Age: 15-16 (series), 18 (movie, end of the series)\n" +
+    private val elric: String = "Anime: Fullmetal Alchemist\n" +
+            "Age: 15-16 (series), 18 (movie, end of the series)\n" +
             "Birthday: 1899\n" +
             "Birthplace: Resembool, Amestris\n" +
             "Family: Alphonse Elric (brother), Trisha Elric (mother, deceased), Van Hohenheim (father)\n" +
@@ -179,7 +188,8 @@ object CharactersData {
             "\n" +
             "On the night of the failed transmutation. Lt. Colonel Flame Alchemist Roy Mustang came to the Rockbell's in response to a letter that Edward and Alphonse had sent him in the mail asking about their Father. He was shocked at the fact that the two boys had tried human alchemy and survived, and informed them that they could become state alchemist and maybe one day find a way to return their bodies to the way they were. Desperate to get His younger brother's body back, Edward asked the Rockbells to give him prosthetic limbs called automail. Though they warned him the surgery would be painful, he said the pain was nothing compared to what his brother had given up. He only took a year to adapt to the automail at age 11 when it took most adults three years.\n"
 
-    private val naruto: String = "Age: 12-13 (Naruto part I), 15-17 (part II), 19 (The Last: Naruto the Movie), 27 (Naruto epilogue), 32 (Boruto: Naruto the Movie)\n" +
+    private val naruto: String = "Anime: Naruto\n" +
+            "Age: 12-13 (Naruto part I), 15-17 (part II), 19 (The Last: Naruto the Movie), 27 (Naruto epilogue), 32 (Boruto: Naruto the Movie)\n" +
             "Birthday: October 10\n" +
             "Blood type: B\n" +
             "Height: 145–147 cm (I), 166 cm (II), 174 cm (The Last: Naruto the Movie), 180 cm (Boruto: Naruto the Movie)\n" +
