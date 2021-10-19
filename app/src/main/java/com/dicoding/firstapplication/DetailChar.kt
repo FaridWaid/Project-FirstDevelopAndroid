@@ -18,7 +18,7 @@ class DetailChar : AppCompatActivity() {
         val tvSetDetail: TextView = findViewById(R.id.tv_item_detail)
 
         val tName  = intent.getStringExtra(EXTRA_NAME)
-        val tImg = intent.getStringExtra(EXTRA_PHOTO)
+        val tImg = intent.getIntExtra(EXTRA_PHOTO,0)
         val tDetail = intent.getStringExtra(EXTRA_DETAIL)
 
 

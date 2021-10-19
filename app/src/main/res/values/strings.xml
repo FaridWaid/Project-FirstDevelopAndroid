@@ -14,4 +14,7 @@
     <string name="about_status"><email>Status</email></string>
     <string name="status"><email>: College Student</email></string>
     <string name="about_dev">Hellooo</string>
+    <string name="favorite_this_character">Favorite This Character!</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
 </resources>

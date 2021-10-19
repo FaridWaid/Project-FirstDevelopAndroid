@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/drawable/custom_button.xml" value="0.2703125" />
+        <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/drawable/custom_button2.xml" value="0.23981481481481481" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/drawable/ic_splash.xml" value="0.2703125" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_about_dev.xml" value="0.4" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_detail_char.xml" value="0.152" />
-        <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/activity_move_about.xml" value="0.17300724637681159" />
         <entry key="..\:/Dev/Android_Dicoding/FirstApplication/app/src/main/res/layout/detail_char.xml" value="0.25407608695652173" />
