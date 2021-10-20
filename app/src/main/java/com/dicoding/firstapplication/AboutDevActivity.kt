@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.net.Uri
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class AboutDevActivity : AppCompatActivity(), View.OnClickListener {
@@ -22,6 +23,12 @@ class AboutDevActivity : AppCompatActivity(), View.OnClickListener {
 
         //back button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        //Bottom Navigation
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+        //Set item navigation
+        bottomNavigation.setOnNavigationItemSelectedListener(navigasjonen)
 
         val urlGithub: ImageView = findViewById(R.id.github)
         urlGithub.setOnClickListener(this)
@@ -52,6 +59,30 @@ class AboutDevActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         }
+    }
+
+    private val navigasjonen = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        when (item.itemId) {
+            R.id.action_home -> {
+                val intent = Intent(this@AboutDevActivity, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.action_about -> {
+                return@OnNavigationItemSelectedListener false
+            }
+//            R.id.favoritter -> {
+//                val intent = Intent(this@MainActivity, MyRecipes::class.java)
+//                startActivity(intent)
+//                return@OnNavigationItemSelectedListener true
+//            }
+//            R.id.utforsk -> {
+//                return@OnNavigationItemSelectedListener true
+//            }
+        }
+        false
+
     }
 
 
