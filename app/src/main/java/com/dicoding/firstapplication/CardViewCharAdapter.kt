@@ -16,9 +16,8 @@ class CardViewCharAdapter(private val listChar: ArrayList<Character>): RecyclerV
     inner class CardViewViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
-        var btnFavorite: Button = itemView.findViewById(R.id.btn_set_favorite)
-        var btnShare: Button = itemView.findViewById(R.id.btn_set_share)
+        var tvRate: TextView = itemView.findViewById(R.id.tv_rate_char)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewViewHolder {
@@ -35,10 +34,8 @@ class CardViewCharAdapter(private val listChar: ArrayList<Character>): RecyclerV
             .into(holder.imgPhoto)
 
         holder.tvName.text = charAnime.name
-        holder.tvDetail.text = charAnime.detail
+        holder.tvRate.text = charAnime.rate
 
-        holder.btnFavorite.setOnClickListener { Toast.makeText(holder.itemView.context, "Your favorite is " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
-        holder.btnShare.setOnClickListener { Toast.makeText(holder.itemView.context, "You have shared " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
         holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, "You selected " + listChar[holder.adapterPosition].name, Toast.LENGTH_SHORT).show() }
 
     }

@@ -221,6 +221,17 @@ object CharactersData {
         R.drawable.elric_edward,
         R.drawable.naruto)
 
+    private val rateChar = arrayOf("144,739",
+        "120,978",
+        "111,936",
+        "102,847",
+        "83,043",
+        "83,021",
+        "82,314",
+        "80,625",
+        "78,651",
+        "70,820")
+
     val listData: ArrayList<Character>
         get() {
             val list = arrayListOf<Character>()
@@ -229,6 +240,7 @@ object CharactersData {
                 charAnime.name = charNames[position]
                 charAnime.detail = charDetail[position]
                 charAnime.photo = charImage[position]
+                charAnime.rate = rateChar[position]
                 list.add(charAnime)
             }
             return list

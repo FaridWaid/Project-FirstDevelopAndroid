@@ -31,14 +31,15 @@ class HomeFragment : Fragment() {
         rvChars = view.findViewById(R.id.rv_chars)
         rvChars.setHasFixedSize(true)
 
+        list.clear()
         list.addAll(CharactersData.listData)
         showRecyclesList()
     }
 
     private fun showRecyclesList() {
         rvChars.layoutManager = LinearLayoutManager(context)
-        val listClubAdapter = ListCharAdapter(list)
-        rvChars.adapter = listClubAdapter
+        val listCharAdapter = ListCharAdapter(list)
+        rvChars.adapter = listCharAdapter
     }
 
 }
