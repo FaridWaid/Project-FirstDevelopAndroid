@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAnime"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity = "center"
+                android:layout_marginTop="20dp"
+                android:padding="10sp"
+                android:src="@android:color/darker_gray"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_marginTop="20dp"
+                android:padding="10sp"
+                android:id="@+id/tv_item_name"/>
+
+            <TextView
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_marginTop="70dp"
+                android:padding="10sp"
+                android:id="@+id/tv_item_score"/>
+
+            <TextView
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_marginTop="120dp"
+                android:padding="10sp"
+                android:id="@+id/tv_item_rank"/>
+
+            <TextView
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_marginTop="170dp"
+                android:padding="10sp"
+                android:id="@+id/tv_popularity"/>
+
+            <TextView
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_marginTop="220dp"
+                android:padding="10sp"
+                android:id="@+id/tv_member"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10sp"
+            android:justificationMode="inter_word"
+            android:id="@+id/tv_item_detail"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_like"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/like_this_anime"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/custom_button2"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textAllCaps="false">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</ScrollView>

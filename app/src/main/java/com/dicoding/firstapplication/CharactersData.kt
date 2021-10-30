@@ -232,6 +232,105 @@ object CharactersData {
         "78,651",
         "70,820")
 
+    private val animeNames = arrayOf("Anime: Code Geass",
+        "Anime: Attack On Titan",
+        "Anime: Death Note",
+        "Anime: One Piece",
+        "Anime: Steins Gate",
+        "Anime: Death Note",
+        "Anime: One Piece",
+        "Anime: Hunter X Hunter",
+        "Anime: Fullmetal Alchemist",
+        "Anime: Naruto")
+
+    private val scoreAnime = arrayOf("Score: 8.71", "Score: 8.62", "Score: 8.63", "Score: 8.60", "Score: 9.09", "Score: 8.60", "Score: 8.63", "Score: 8.40", "Score: 8.13", "Score: 7.95")
+
+    private val rankDetail = arrayOf("Ranked #43",
+        "Ranked #67",
+        "Ranked #63",
+        "Ranked #70",
+        "Ranked #4",
+        "Ranked #70",
+        "Ranked #63",
+        "Ranked #162",
+        "Ranked #395",
+        "Ranked #610")
+
+    private val popularityAnime = arrayOf("Popularity #17",
+        "Popularity #26",
+        "Popularity #1",
+        "Popularity #29",
+        "Popularity #11",
+        "Popularity #29",
+        "Popularity #1",
+        "Popularity #334",
+        "Popularity #60",
+        "Popularity #8")
+
+    private val membersAnime = arrayOf("Members 1,844,711",
+        "Members 1,706,277",
+        "Members 3,129,523",
+        "Members 1,677,057",
+        "Members 2,079,088",
+        "Members 1,677,057",
+        "Members 3,129,523",
+        "Members 485,968",
+        "Members 1,286,424",
+        "Members 2,271,204")
+
+    private val codeGeassAnime : String = "In the year 2010, the Holy Empire of Britannia is establishing itself as a dominant military nation, starting with the conquest of Japan. Renamed to Area 11 after its swift defeat, Japan has seen significant resistance against these tyrants in an attempt to regain independence.\n" +
+            "\n" +
+            "Lelouch Lamperouge, a Britannian student, unfortunately finds himself caught in a crossfire between the Britannian and the Area 11 rebel armed forces. He is able to escape, however, thanks to the timely appearance of a mysterious girl named C.C., who bestows upon him Geass, the \"Power of Kings.\" Realizing the vast potential of his newfound \"power of absolute obedience,\" Lelouch embarks upon a perilous journey as the masked vigilante known as Zero, leading a merciless onslaught against Britannia in order to get revenge once and for all."
+
+    private val attackOnTitanAnime : String = "Still threatened by the \"Titans\" that rob them of their freedom, mankind remains caged inside the two remaining walls. Efforts to eradicate these monsters continue; however, threats arise not only from the Titans beyond the walls, but from the humans within them as well.\n" +
+            "\n" +
+            "After being rescued from the Colossal and Armored Titans, Eren Yaeger devotes himself to improving his Titan form. Krista Lenz struggles to accept the loss of her friend, Captain Levi chooses Eren and his friends to form his new personal squad, and Commander Erwin Smith recovers from his injuries. All seems well for the soldiers, until the government suddenly demands custody of Eren and Krista. The Survey Corps' recent successes have drawn attention, and a familiar face from Levi's past is sent to collect the wanted soldiers. Sought after by the government, Levi and his new squad must evade their adversaries in hopes of keeping Eren and Krista safe.\n" +
+            "\n" +
+            "In Shingeki no Kyojin Season 3, Eren and his fellow soldiers are not only fighting for their survival against the terrifying Titans, but also against the terror of a far more conniving foe: humans."
+
+    private val deathNoteAnime : String = "A shinigami, as a god of death, can kill any person—provided they see their victim's face and write their victim's name in a notebook called a Death Note. One day, Ryuk, bored by the shinigami lifestyle and interested in seeing how a human would use a Death Note, drops one into the human realm.\n" +
+            "\n" +
+            "High school student and prodigy Light Yagami stumbles upon the Death Note and—since he deplores the state of the world—tests the deadly notebook by writing a criminal's name in it. When the criminal dies immediately following his experiment with the Death Note, Light is greatly surprised and quickly recognizes how devastating the power that has fallen into his hands could be.\n" +
+            "\n" +
+            "With this divine capability, Light decides to extinguish all criminals in order to build a new world where crime does not exist and people worship him as a god. Police, however, quickly discover that a serial killer is targeting criminals and, consequently, try to apprehend the culprit. To do this, the Japanese investigators count on the assistance of the best detective in the world: a young and eccentric man known only by the name of L.\n"
+
+    private val onePieceAnime : String = "Gol D. Roger was known as the \"Pirate King,\" the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.\n" +
+            "\n" +
+            "Enter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.\n"
+
+    private val steinsGateAnime : String = "The self-proclaimed mad scientist Rintarou Okabe rents out a room in a rickety old building in Akihabara, where he indulges himself in his hobby of inventing prospective \"future gadgets\" with fellow lab members: Mayuri Shiina, his air-headed childhood friend, and Hashida Itaru, a perverted hacker nicknamed \"Daru.\" The three pass the time by tinkering with their most promising contraption yet, a machine dubbed the \"Phone Microwave,\" which performs the strange function of morphing bananas into piles of green gel.\n" +
+            "\n" +
+            "Though miraculous in itself, the phenomenon doesn't provide anything concrete in Okabe's search for a scientific breakthrough; that is, until the lab members are spurred into action by a string of mysterious happenings before stumbling upon an unexpected success—the Phone Microwave can send emails to the past, altering the flow of history.\n" +
+            "\n" +
+            "Adapted from the critically acclaimed visual novel by 5pb. and Nitroplus, Steins;Gate takes Okabe through the depths of scientific theory and practicality. Forced across the diverging threads of past and present, Okabe must shoulder the burdens that come with holding the key to the realm of time."
+
+    private val hunterXhunterAnime : String = "Hunters are specialized in a wide variety of fields, ranging from treasure hunting to cooking. They have access to otherwise unavailable funds and information that allow them to pursue their dreams and interests. However, being a hunter is a special privilege, only attained by taking a deadly exam with an extremely low success rate.\n" +
+            "\n" +
+            "Gon Freecss, a 12-year-old boy with the hope of finding his missing father, sets out on a quest to take the Hunter Exam. Along the way, he picks up three companions who also aim to take the dangerous test: the revenge-seeking Kurapika, aspiring doctor Leorio Paladiknight, and a mischievous child the same age as Gon, Killua Zoldyck.\n" +
+            "\n" +
+            "Hunter x Hunter is a classic shounen that follows the story of four aspiring hunters as they embark on a perilous adventure, fighting for their dreams while defying the odds."
+
+    private val fullmetalAlchemisAnime : String = "Edward Elric, a young, brilliant alchemist, has lost much in his twelve-year life: when he and his brother Alphonse try to resurrect their dead mother through the forbidden act of human transmutation, Edward loses his brother as well as two of his limbs. With his supreme alchemy skills, Edward binds Alphonse's soul to a large suit of armor.\n" +
+            "\n" +
+            "A year later, Edward, now promoted to the fullmetal alchemist of the state, embarks on a journey with his younger brother to obtain the Philosopher's Stone. The fabled mythical object is rumored to be capable of amplifying an alchemist's abilities by leaps and bounds, thus allowing them to override the fundamental law of alchemy: to gain something, an alchemist must sacrifice something of equal value. Edward hopes to draw into the military's resources to find the fabled stone and restore his and Alphonse's bodies to normal. However, the Elric brothers soon discover that there is more to the legendary stone than meets the eye, as they are led to the epicenter of a far darker battle than they could have ever imagined.\n"
+
+    private val narutoAnime : String = "Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.\n" +
+            "\n" +
+            "Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes."
+
+    private val animeDetail = arrayOf(codeGeassAnime, attackOnTitanAnime, deathNoteAnime, onePieceAnime, steinsGateAnime, deathNoteAnime, onePieceAnime, hunterXhunterAnime, fullmetalAlchemisAnime, narutoAnime)
+
+    private val animeImage = intArrayOf(R.drawable.code_geass,
+        R.drawable.snk,
+        R.drawable.death_note,
+        R.drawable.one_piece,
+        R.drawable.steins_gate,
+        R.drawable.death_note,
+        R.drawable.one_piece,
+        R.drawable.hunterxhunter,
+        R.drawable.fullmetal_alchemist,
+        R.drawable.naruto_anime)
+
     val listData: ArrayList<Character>
         get() {
             val list = arrayListOf<Character>()
@@ -241,6 +340,13 @@ object CharactersData {
                 charAnime.detail = charDetail[position]
                 charAnime.photo = charImage[position]
                 charAnime.rate = rateChar[position]
+                charAnime.nameAnime = animeNames[position]
+                charAnime.score = scoreAnime[position]
+                charAnime.rank = rankDetail[position]
+                charAnime.popularity = popularityAnime[position]
+                charAnime.members = membersAnime[position]
+                charAnime.detailAnime = animeDetail[position]
+                charAnime.photoAnime = animeImage[position]
                 list.add(charAnime)
             }
             return list

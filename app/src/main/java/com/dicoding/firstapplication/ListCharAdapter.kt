@@ -40,6 +40,13 @@ class ListCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.
             moveDetail.putExtra(DetailChar.EXTRA_NAME, charAnime.name)
             moveDetail.putExtra(DetailChar.EXTRA_DETAIL, charAnime.detail)
             moveDetail.putExtra(DetailChar.EXTRA_PHOTO, charAnime.photo)
+            moveDetail.putExtra(DetailChar.EXTRA_NAME_ANIME, charAnime.nameAnime)
+            moveDetail.putExtra(DetailChar.EXTRA_SCORE, charAnime.score)
+            moveDetail.putExtra(DetailChar.EXTRA_RANK, charAnime.rank)
+            moveDetail.putExtra(DetailChar.EXTRA_POPULARITY, charAnime.popularity)
+            moveDetail.putExtra(DetailChar.EXTRA_MEMBERS, charAnime.members)
+            moveDetail.putExtra(DetailChar.EXTRA_DETAIL_ANIME, charAnime.detailAnime)
+            moveDetail.putExtra(DetailChar.EXTRA_PHOTO_ANIME, charAnime.photoAnime)
             mContext.startActivity(moveDetail)
         }
     }
