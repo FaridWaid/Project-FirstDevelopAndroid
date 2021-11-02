@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.dicoding.firstapplication.Character
-import com.dicoding.firstapplication.CharactersData
-import com.dicoding.firstapplication.ListCharAdapter
+import com.dicoding.firstapplication.data.Character
+import com.dicoding.firstapplication.data.CharactersData
+import com.dicoding.firstapplication.adapter.ListCharAdapter
 import com.dicoding.firstapplication.R
 
 class HomeFragment : Fragment() {

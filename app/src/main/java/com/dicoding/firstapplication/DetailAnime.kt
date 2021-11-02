@@ -10,9 +10,18 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
 class DetailAnime : AppCompatActivity() {
+
+    private var title: String = "Detail Anime"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_anime)
+
+        val actionBar = supportActionBar
+        actionBar!!.title = title
+
+        //back button
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
         val tvSetName: TextView = findViewById(R.id.tv_item_name)
         val tvSetScore: TextView = findViewById(R.id.tv_item_score)

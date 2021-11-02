@@ -12,41 +12,20 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_navigation"
-        android:layout_marginBottom="-60dp"/>
+        android:layout_marginBottom="80dp" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Top Character In Anime"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="20dp" />-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="400dp"-->
-<!--            android:layout_marginTop="-125dp"-->
-<!--            android:src="@drawable/title" />-->
-
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/rv_chars"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="550dp"-->
-<!--            android:layout_marginTop="120dp"-->
-<!--            tools:listitem="@layout/item_row_char" />-->
-
-<!--    </FrameLayout>-->
-
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/menu"
-        android:background="?android:attr/windowBackground"/>
+        android:layout_marginBottom="0dp"
+        app:mbn_backgroundBottomColor="#3EDBF0"
+        app:mbn_countBackgroundColor="#FFF"
+        app:mbn_countTextColor="#000"
+        app:mbn_defaultIconColor="#000"
+        app:mbn_rippleColor="#FFF"
+        app:mbn_selectedIconColor="#FFF"
+        app:mbn_shadowColor="#5000" />
 
 </RelativeLayout>

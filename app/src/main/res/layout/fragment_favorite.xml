@@ -11,14 +11,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="-60dp">
+        android:layout_marginBottom="8dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:gravity="center"
-            android:text="Top Character In Anime"
+            android:text="Rate Character"
             android:textColor="@color/white"
             android:textSize="20dp" />
 
@@ -31,14 +31,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_chars"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="120dp"
             tools:listitem="@layout/item_cardview_char" />
-
-
-
-
     </FrameLayout>
-
-
 </RelativeLayout>

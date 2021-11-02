@@ -15,11 +15,17 @@ import com.dicoding.firstapplication.fragments.FavoriteFragment
 class DetailChar : AppCompatActivity() {
 
     private val favoriteFragment = FavoriteFragment()
+    private var title: String = "Detail Character"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_char)
 
+        val actionBar = supportActionBar
+        actionBar!!.title = title
+
+        //back button
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
         val tvSetName: TextView = findViewById(R.id.tv_item_name)
         val imgSetPhoto: ImageView = findViewById(R.id.img_item_photo)

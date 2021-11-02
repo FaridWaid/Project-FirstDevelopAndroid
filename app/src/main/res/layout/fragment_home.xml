@@ -10,8 +10,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="-60dp">
+        android:layout_height="match_parent" >
 
         <TextView
             android:layout_width="match_parent"
@@ -31,11 +30,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_chars"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="120dp"
             tools:listitem="@layout/item_row_char" />
 
     </FrameLayout>
-
-
 </RelativeLayout>
