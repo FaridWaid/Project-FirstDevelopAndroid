@@ -42,16 +42,12 @@ class DetailChar : AppCompatActivity() {
         val tDetailAnime = intent.getStringExtra(EXTRA_DETAIL_ANIME)
         val tImgAnime = intent.getIntExtra(EXTRA_PHOTO_ANIME, 0)
 
-
         tvSetName.text = tName
         Glide.with(this)
             .load(tImg)
             .apply(RequestOptions())
             .into(imgSetPhoto)
         tvSetDetail.text = tDetail
-
-//        val mFragmentManager = supportFragmentManager
-//        val mFragmentTransaction = mFragmentManager.beginTransaction()
 
         val btnCheck: Button = findViewById(R.id.button_check)
         btnCheck.setOnClickListener{
@@ -85,13 +81,4 @@ class DetailChar : AppCompatActivity() {
         onBackPressed()
         return true
     }
-
-//    private fun replaceFragment(fragment: Fragment) {
-//        if (fragment != null) {
-//            val transaction = supportFragmentManager.beginTransaction()
-//            transaction.replace(R.id.fragment_container, favoriteFragment)
-//            transaction.commit()
-//        }
-//    }
-
 }
